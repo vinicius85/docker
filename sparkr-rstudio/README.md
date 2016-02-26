@@ -1,17 +1,18 @@
-# RStudio Server + SparkR Docker Container
+### RStudio Server + SparkR Docker Container
 
-Container intended to run SparkR with RStudio, based on [Rocker Rstudio image]().
+Container intended to run RStudio with SparkR, based on [Rocker Rstudio image](https://hub.docker.com/r/rocker/rstudio/).
 
 
-## Getting started
+#### Getting started
 
 ```
 docker pull vinicius85/sparkr-rstudio
 ``` 
-...you can also pull source code or fork project for adding more R packages in `setup.R` and install them at docker image build time
+
+You can also pull source code or fork project for adding more R packages in `setup.R` and install them at docker image build time
 
 
-## Usage
+#### Usage
 
 ```
 docker run -dt -p 8787:8787 vinicius85/sparkr-rstudio
